@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - Online Shopping</title>
+</head>
+<body>
+     <header style="background:#2e2e4e; padding:15px;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+      <div>
+        <span style="font-family:Verdana, Arial; font-size:24px; color:#fff; font-weight:700;">OnlineShop</span>
+      </div>
+      <nav>
+        <a href="index.html" style="color:#ffffff; text-decoration:none; margin-right:10px;">Нүүр</a>
+        <a href="leaderboard.html" style="color:#ffffff; text-decoration:none; margin-right:10px;">Leaderboard</a>
+        <a href="wishlist.html" style="color:#ffffff; text-decoration:none; margin-right:10px;">Wishlist</a>
+        <a href="feedback.html" style="color:#ffffff; text-decoration:none;">Санал хүсэлт</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Толгой -->
+  <header>
+    <table width="100%">
+      <tr>
+        <td><img src="logo.png" alt="Logo" width="60"></td>
+        <td><h1>Online Shopping</h1></td>
+        <td align="right">
+          <nav>
+            <a href="index.html">Home</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="payment.html">Payment</a>
+          </nav>
+        </td>
+      </tr>
+    </table>
+    <hr>
+  </header>
+
+  <!-- Агуулга -->
+  <h2>Төлбөрийн арга сонгох</h2>
+
+  <form>
+    <fieldset>
+      <legend><strong>Төлбөрийн арга</strong></legend>
+      <label><input type="radio" name="payment" value="card" checked> Карт (Visa/Master)</label><br>
+      <label><input type="radio" name="payment" value="qpay"> QPay QR</label><br>
+      <label><input type="radio" name="payment" value="bank"> Банк шилжүүлэг</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>Картын мэдээлэл</strong></legend>
+      <label>Картын дугаар: 
+        <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
+      </label><br><br>
+      <label>Хүчинтэй хугацаа: 
+        <input type="text" name="expiry" placeholder="MM/YY">
+      </label><br><br>
+      <label>CVV: 
+        <input type="password" name="cvv" size="3">
+      </label>
+    </fieldset>
+
+    <br>
+    <button type="submit">💳 Төлбөр хийх</button>
+  </form>
+
+  <!-- Хөл -->
+  <hr>
+  <footer style="background:#2e2e4e; padding:10px;">
+    <div style="text-align:center; color:#ffffff; font-family:Verdana, Arial; font-size:12px;">
+      © OnlineShop 2025 — Нүүр хуудас
+    </div>
+  </footer>
+</body>
+</html>

@@ -166,30 +166,6 @@
 
     </div>
 
-    <script>
-        // FAQ асуултуудыг нээх/хаах функц
-        function toggleAnswer(answerId) {
-            const answer = document.getElementById(answerId);
-            const iconId = 'icon' + answerId.slice(-1);
-            const icon = document.getElementById(iconId);
-
-            if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
-                answer.style.maxHeight = '0';
-                answer.style.padding = '0 20px';
-                icon.textContent = '+';
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                answer.style.padding = '0 20px 15px';
-                icon.textContent = '-';
-            }
-        }
-    </script>
-    <!-- Хөлний хэсэг -->
-    <footer style="background:#2e2e4e; padding:10px;">
-        <div style="text-align:center; color:#ffffff; font-family:Verdana, Arial; font-size:12px;">
-            © OnlineShop 2025 — Нүүр хуудас
-        </div>
-    </footer>
 </body>
 
 </html>

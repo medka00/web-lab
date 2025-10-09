@@ -1,100 +1,85 @@
+<!-- TSOGOO -->
 <!DOCTYPE html>
 <html lang="mn">
+    <head  >
+        <meta charset="UTF-8">
+        <title>Сагс</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Сагс</title>
+    </head>
+  
+    <body>
+        <main><h2>Таны Сагс</h2>
+            <table border="1" cellpadding="6" cellspacing="0" style="margin: 0 auto;">
+                <thead>
+                    <th>Бүтээгдэхүүн</th>
+                    <th>Нэгж үнэ</th>
+                    <th>Тоо</th>
+                    <th>Нийт үнэ</th>
+                   
 
-</head>
+                </thead>
+              <tbody>
+                    <tr><td><strong></strong><br>
+                    <small></small>
+                    <td></td>
 
-<body>
-  <main>
-    <h2>Таны Сагс</h2>
-    <table border="1" cellpadding="6" cellspacing="0" style="margin: 0 auto;">
-      <thead>
-        <th>Бүтээгдэхүүн</th>
-        <th>Нэгж үнэ</th>
-        <th>Тоо</th>
-        <th>Нийт үнэ</th>
-        <th>uildel</th>
+                    
+                    
+                    <td>
+                    <input type="number" name="qty_1" value="" min="1">
 
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong></strong><br>
+                    
+            </tr>
+            <tr><td><strong></strong><br>
             <small></small>
-          <td></td>
+            <td></td>
+            <td>
+                <input type="number" name="qty_2" value="" min="1">
+            </td>
+           </tr>
+       
 
+                </tbody>
 
+            </table>
+        <h3>Захиалга илгээх (Checkout)</h3>
+<form action="mailto:tsogtjargal25@gmail.com" method="post" enctype="text/plain">
+  <table border="1" cellpadding="6" cellspacing="0" style="margin: 0 auto;">
+    <tr>
+      <td>Нэр:</td>
+      <td><input type="text" name="customer_name" required></td>
+      <td>Утас:</td>
+      <td><input type="tel" name="customer_phone" required></td>
+    </tr>
 
-          <td>
-            <input type="number" name="qty_1" value="" min="1">
+    <tr>
+      <td>Хаяг:</td>
+      <td colspan="3">
+        <textarea name="customer_address" rows="2" cols="60" required></textarea>
+      </td>
+    </tr>
 
-          </td>
-          <td></td>
-          <td><a href="product.html">устгах</a></td>
-          </td>
-        </tr>
-        <tr>
-          <td><strong></strong><br>
-            <small></small>
-          <td></td>
-          <td>
-            <input type="number" name="qty_2" value="" min="1">
-          </td>
-          <td></td>
-          <td><a href="product.html">устгах</a></td>
-          </td>
-        </tr>
-
-
-      </tbody>
-
-    </table>
-    <h3>Захиалга илгээх (Checkout)</h3>
-    <form action="mailto:tsogtjargal25@gmail.com" method="post" enctype="text/plain">
-      <table border="1" cellpadding="6" cellspacing="0" style="margin: 0 auto;">
-        <tr bgcolor="yellow">
-          <td>Нэр:</td>
-          <td><input type="text" name="customer_name" required></td>
-          <td>Утас:</td>
-          <td><input type="tel" name="customer_phone" required></td>
-        </tr>
-
-        <tr>
-          <td>Хаяг:</td>
-          <td colspan="3">
-            <textarea name="customer_address" rows="2" cols="60" required></textarea>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Захиалга:</td>
-          <td colspan="3">
-            <textarea name="order_details" rows="4" cols="70">
+    <tr>
+      <td>Захиалга:</td>
+      <td colspan="3">
+        <textarea name="order_details" rows="4" cols="70">
 
 </textarea>
-          </td>
-        </tr>
+      </td>
+    </tr>
 
-        <tr>
-          <td colspan="4" align="center">
-            <input type="submit" value="Захиалгаа илгээх">
-            <input type="reset" value="Форма устгах">
-          </td>
-        </tr>
-      </table>
-    </form>
+    <tr>
+      <td colspan="4" align="center">
+        <input type="submit" value="Захиалгаа илгээх">
+        <input type="reset" value="Форма устгах">
+      </td>
+    </tr>
+  </table>
+</form>
 
+        
+        </main>
+      
 
-  </main>
-  <footer>
-    <p>© 2025 Online Shop. All rights reserved.</p>
-    <nav><a href="contact.html">Холбоо барих</a>
-      <a href="about.html">тухай</a>
-    </nav>
-  </footer>
-
-</body>
-
+    </body>
 </html>

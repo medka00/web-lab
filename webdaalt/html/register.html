@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Бүртгэлийн цонх</title>
+</head>
+
+<body bgcolor="#f2f2f2" text="#333">
+
+    <h2 align="center">
+        <font color="darkblue">📝 Бүртгэлийн цонх</font>
+    </h2>
+    <hr color="darkblue" size="3" width="60%">
+
+    <form action="register" method="post" align="center">
+        <table cellpadding="8" bgcolor="white" border="1" bordercolor="darkblue">
+            <tr>
+                <td align="right"><b>Нэр:</b></td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Овог:</b></td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Имэйл:</b></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Нууц үг:</b></td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Нууц үг давтах:</b></td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Хүйс:</b></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Эрэгтэй
+                    <input type="radio" name="gender" value="female"> Эмэгтэй
+                    <input type="radio" name="gender" value="other"> Бусад
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Төрсөн огноо:</b></td>
+                <td><input type="date" name="birthdate"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Утасны дугаар:</b></td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="✅ Бүртгүүлэх">
+                    <input type="reset" value="❌ Цэвэрлэх">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr color="darkblue" size="3" width="60%">
+    <p align="center">Хэрэв аль хэдийн бүртгэлтэй бол <a href="login.html">
+            <font color="darkred">нэвтрэх</font>
+        </a>.</p>
+
+</body>
+
+</html>

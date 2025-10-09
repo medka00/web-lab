@@ -1,0 +1,13 @@
+<header style="background:#2e2e4e; padding:15px;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+            <span style="font-family:Verdana, Arial; font-size:24px; color:#fff; font-weight:700;">OnlineShop</span>
+        </div>
+        <nav>
+            <a href="index.html" style="color:#ffffff; text-decoration:none; margin-right:10px;">Нүүр</a>
+            <a href="leaderboard.html" style="color:#ffffff; text-decoration:none; margin-right:10px;">Leaderboard</a>
+            <a href="login" style="color:#ffffff; text-decoration:none; margin-right:10px;">Wishlist</a>
+            <a href="FAQ.html" style="color:#ffffff; text-decoration:none;">Санал хүсэлт</a>
+        </nav>
+    </div>
+</header>

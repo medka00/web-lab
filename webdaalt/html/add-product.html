@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="utf-8">
+    <title>Бараа нэмэх</title>
+</head>
+
+<body bgcolor="#e6f2ff" text="#333" link="#800080" alink="#ff0000" vlink="#660066">
+
+    <center>
+        <table border="0" bgcolor="white" cellpadding="20" cellspacing="0" width="600">
+            <tr>
+                <td align="center">
+                    <font face="Arial" size="5" color="#333"><b>Шинэ бараа нэмэх</b></font>
+                    <hr color="#3498db" size="3" width="80%">
+
+                    <form action="/add-product" method="post" enctype="multipart/form-data">
+                        <table border="0" width="100%">
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Барааны нэр:</font><br>
+                                    <input type="text" name="product_name" size="50" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Ангилал:</font><br>
+                                    <select name="category" style="width: 365px; height: 30px;" required>
+                                        <option value="">Сонгоно уу</option>
+                                        <option value="electronics">Электроникс</option>
+                                        <option value="clothing">Хувцас</option>
+                                        <option value="food">Хоол хүнс</option>
+                                        <option value="books">Ном</option>
+                                        <option value="toys">Тоглоом</option>
+                                        <option value="other">Бусад</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Үнэ (₮):</font><br>
+                                    <input type="number" name="price" size="50" min="0" step="0.01" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Тоо ширхэг:</font><br>
+                                    <input type="number" name="quantity" size="50" min="0" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Тайлбар:</font><br>
+                                    <textarea name="description" rows="5" cols="47" required></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Барааны зураг:</font><br>
+                                    <input type="file" name="product_image" accept="image/*" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left">
+                                    <font face="Arial" size="3">Хямдралтай эсэх:</font><br>
+                                    <input type="checkbox" name="on_sale" value="yes">
+                                    <font face="Arial" size="2">Тийм</font>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">
+                                    <br>
+                                    <input type="submit" value="Бараа нэмэх"
+                                        style="width: 120px; height: 35px; margin-right: 10px;">
+                                    <input type="reset" value="Цэвэрлэх" style="width: 120px; height: 35px;">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <hr color="#ccc" size="1" width="90%">
+                    <font face="Arial" size="2"><a href="dashboard.html">Буцах</a></font>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>

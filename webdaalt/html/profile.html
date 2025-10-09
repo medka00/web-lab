@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Online Shop</title>
+</head>
+
+<body>
+    <h1>🛍️ Online Shop - My Account</h1>
+    <hr>
+
+    <h2>Profile Information</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td><strong>Profile Picture:</strong></td>
+            <td>👤</td>
+        </tr>
+        <tr>
+            <td><strong>Name:</strong></td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td><strong>Email:</strong></td>
+            <td>john.doe@email.com</td>
+        </tr>
+        <tr>
+            <td><strong>Member Since:</strong></td>
+            <td>January 2024</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Payment Methods</h2>
+    <h3>Saved Payment Methods</h3>
+    <table border="1" cellpadding="10" cellspacing="0" width="80%">
+        <tr>
+            <th>Type</th>
+            <th>Details</th>
+            <th>Expiry</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>💳 Credit Card</td>
+            <td>Visa •••• 4242</td>
+            <td>12/2025</td>
+            <td><button>Remove</button></td>
+        </tr>
+        <tr>
+            <td>💳 Debit Card</td>
+            <td>Mastercard •••• 8888</td>
+            <td>06/2026</td>
+            <td><button>Remove</button></td>
+        </tr>
+        <tr>
+            <td>📱 PayPal</td>
+            <td>john.doe@email.com</td>
+            <td>N/A</td>
+            <td><button>Remove</button></td>
+        </tr>
+    </table>
+
+    <h3>Add New Payment Method</h3>
+    <form>
+        <table>
+            <tr>
+                <td><label for="cardtype">Payment Type:</label></td>
+                <td>
+                    <select id="cardtype" name="cardtype">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="amex">American Express</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cardnumber">Card Number:</label></td>
+                <td><input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456"
+                        maxlength="19" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="expiry">Expiry Date:</label></td>
+                <td><input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" size="10"></td>
+            </tr>
+            <tr>
+                <td><label for="cvv">CVV:</label></td>
+                <td><input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" size="10"></td>
+            </tr>
+            <tr>
+                <td><label for="cardholder">Cardholder Name:</label></td>
+                <td><input type="text" id="cardholder" name="cardholder" placeholder="Name on card" size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Add Payment Method"></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h2>Order History</h2>
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>#12345</td>
+            <td>October 5, 2025</td>
+            <td>Wireless Headphones, Phone Case</td>
+            <td>$129.99</td>
+            <td>✓ Delivered</td>
+            <td><button>View Details</button></td>
+        </tr>
+        <tr>
+            <td>#12344</td>
+            <td>September 28, 2025</td>
+            <td>Smart Watch</td>
+            <td>$89.50</td>
+            <td>🚚 In Transit</td>
+            <td><button>Track Order</button></td>
+        </tr>
+        <tr>
+            <td>#12343</td>
+            <td>September 15, 2025</td>
+            <td>Laptop Stand, USB-C Cable, Mouse</td>
+            <td>$245.00</td>
+            <td>✓ Delivered</td>
+            <td><button>View Details</button></td>
+        </tr>
+        <tr>
+            <td>#12342</td>
+            <td>August 20, 2025</td>
+            <td>Keyboard</td>
+            <td>$79.99</td>
+            <td>✓ Delivered</td>
+            <td><button>View Details</button></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Shipping Addresses</h2>
+    <h3>Saved Addresses</h3>
+
+    <fieldset>
+        <legend>🏠 Home Address (Default)</legend>
+        <p><strong>John Doe</strong></p>
+        <p>123 Main Street</p>
+        <p>Apartment 4B</p>
+        <p>New York, NY 10001</p>
+        <p>United States</p>
+        <p>Phone: +1 234 567 8900</p>
+        <button>Edit</button>
+        <button>Remove</button>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>🏢 Work Address</legend>
+        <p><strong>John Doe</strong></p>
+        <p>456 Business Ave</p>
+        <p>Suite 200</p>
+        <p>New York, NY 10002</p>
+        <p>United States</p>
+        <p>Phone: +1 234 567 8900</p>
+        <button>Edit</button>
+        <button>Remove</button>
+    </fieldset>
+
+    <h3>Add New Address</h3>
+    <form>
+        <table>
+            <tr>
+                <td><label for="addrlabel">Address Label:</label></td>
+                <td><input type="text" id="addrlabel" name="addrlabel" placeholder="e.g., Home, Work" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="recipient">Recipient Name:</label></td>
+                <td><input type="text" id="recipient" name="recipient" placeholder="Full Name" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="street">Street Address:</label></td>
+                <td><input type="text" id="street" name="street" placeholder="123 Main St" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="apt">Apartment/Suite:</label></td>
+                <td><input type="text" id="apt" name="apt" placeholder="Apt 4B (Optional)" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" placeholder="New York" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State/Province:</label></td>
+                <td><input type="text" id="state" name="state" placeholder="NY" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="zip">ZIP/Postal Code:</label></td>
+                <td><input type="text" id="zip" name="zip" placeholder="10001" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country">
